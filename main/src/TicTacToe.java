@@ -21,10 +21,8 @@ public class TicTacToe {
         while(true){
             System.out.println("Enter your placement (1-9) : ");
             int playerPos = scan.nextInt();
-
-            System.out.println(playerPos);
-
-            while(playerPositions.contains(playerPos) || cpuPositions.contains(playerPositions)){
+            
+            while(playerPositions.contains(playerPos) || cpuPositions.contains(playerPos)){
                 System.out.println("Position taken! Enter a correct Position");
                 playerPos = scan.nextInt();
             }
