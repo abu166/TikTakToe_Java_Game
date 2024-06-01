@@ -124,7 +124,7 @@ public class TicTacToe {
 
         for(List l : winning){
             if(playerPositions.containsAll(l)){
-                return "Congratulations You Won!";
+                return "Congratulations You Win!";
             } else if(cpuPositions.containsAll(l)){
                 return "CPU wins! Have another try :)";
             } else if(playerPositions.size() + cpuPositions.size() == 9){
